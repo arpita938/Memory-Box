@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Add Theatre
+    Add Location
   </title>
   <meta content='width=device-width, initial-scale=1.0' name='viewport' />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -139,9 +139,9 @@
         <li>
           <a href="/index" method="POST">
             <svg>
-              <use xlink:href="#trends"></use>
+              <use xlink:href="#users"></use>
             </svg>
-            <span>Add movie</span>
+            <span>Add patient</span>
           </a>
         </li>
         <li>
@@ -149,10 +149,33 @@
             <svg>
               <use xlink:href="#trends"></use>
             </svg>
-            <span>Add theatre</span>
+            <span>Location</span>
           </a>
         </li>
-        
+        <li>
+          <a href="/contact" method="POST">
+            <svg>
+              <use xlink:href="#contact"></use>
+            </svg>
+            <span>Important Contacts</span>
+          </a>
+        </li>
+        <li>
+          <a href="/homemap" method="POST">
+            <svg>
+              <use xlink:href="#collection"></use>
+            </svg>
+            <span>Home Map Data</span>
+          </a>
+        </li>
+        <li>
+          <a href="/prescription" method="POST">
+            <svg>
+              <use xlink:href="#list"></use>
+            </svg>
+            <span>Patient's prescriptions</span>
+          </a>
+        </li>
       
         <li>
           
@@ -167,27 +190,27 @@
         <section class="sm-box sm-box--2">
         <article>
             <button class="null_pt" ><a href="/locations"><b>Go Back</b></a></button>
-            <h3 class="patient_head">Add Theatre</h3>
+            <h3 class="patient_head">Add Patient Location</h3>
             <div class="container">
               
                 <div class="content">
                   <form action="/add-location" method="POSt">
                     <div class="user-details">
                       <div class="input-box">
-                        <span class="details">Theatre ID</span>
-                        <input type="text" name="id1" id="id1" placeholder="Enter Movie ID" required>
+                        <span class="details">Patient ID</span>
+                        <input type="text" name="id1" id="id1" placeholder="Enter Patient ID" required>
                       </div>
                       <div class="input-box">
-                        <span class="details">Theatre Name</span>
-                        <input type="text" name="location" id="location" placeholder="Enter Theatre Name" required>
+                        <span class="details">Location Name</span>
+                        <input type="text" name="location" id="location" placeholder="Enter Location name" required>
                       </div>
                       <div class="input-box">
-                        <span class="details">Total Halls</span>
-                        <input type="text" name="latitude" id="latitude" placeholder="Enter Halls" required>
+                        <span class="details">Latitude</span>
+                        <input type="text" name="latitude" id="latitude" placeholder="Enter Latitude" required>
                       </div>
                       <div class="input-box">
-                        <span class="details">Screen Size</span>
-                        <input type="text" name="longitude" id="longitude" placeholder="Enter Screen Size required>
+                        <span class="details">Longitude</span>
+                        <input type="text" name="longitude" id="longitude" placeholder="Enter Longitude" required>
                       </div> 
                     </div>
                     <div class="button">
